@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="modinatheme">
+    <!-- ======== Page title ============ -->
+    <title>AiQsoftTech</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- ===========  All Stylesheet ================= -->
+    <!--  Icon css plugins -->
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <!--  animate css plugins -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--  slick css plugins -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--  magnific-popup css plugins -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!-- metis menu css file -->
+    <link rel="stylesheet" href="assets/css/metismenu.css">
+    <!-- select2 css file -->
+    <link rel="stylesheet" href="assets/css/nice-select2.css">
+    <!--  Bootstrap css plugins -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	
+    <!--  main style css file -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    
+</head>
+
+<body class="body-wrapper">    
+    <!-- preloader -->
+
+
+    <script>
+        // JavaScript for form validation
+        document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var phonenumber = document.getElementById('phonenumber').value;
+      
+          // Regular expression for email validation
+          var emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      
+          // Regular expression for phone number validation
+          var phoneRegex = /^[0-9]{10}$/;
+      
+          if (name.trim() === '') {
+            alert('Please enter your full name');
+            event.preventDefault();
+          }
+      
+          if (!email.match(emailRegex)) {
+            alert('Please enter a valid email address');
+            event.preventDefault();
+          }
+      
+          if (!phonenumber.match(phoneRegex)) {
+            alert('Please enter a valid phone number (10 digits)');
+            event.preventDefault();
+          }
+        });
+      </script>
+    <div class="top-bar-wrapper d-none d-sm-block">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="top-left">
+                <a href="tel:+91 91766 73446"><i class="fal fa-phone-volume"></i>+91 99443 77693</a>
+                <a href="mailto:info@aiqsofttech.com"><i class="fal fa-envelope"></i>info@aiqsofttech.com</a>
+                <a href="#"><i class="fal fa-map-marker-alt"></i>Chennai, India</a>
+            </div>
+            <div class="top-right d-none d-md-block">
+                <div class="social-pages">
+                    <a href="https://www.facebook.com/profile.php?id=61555227451654" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                        <a href="https://www.youtube.com/@AiQsoftTech" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a> 
+                                        <a href="https://www.instagram.com/aiqsofttech/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/aiq-soft-tech?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=9944377693&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+                    <a href="blogs.html">Blogs</a>
+                    <a href="contact.html">Contact</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-1">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-3 col-sm-5 col-md-4 col-6 pr-lg-5">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo.svg"  alt="AiQsoftTech">       
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 text-end p-lg-0 d-none d-lg-flex justify-content-between align-items-center">
+                    <div class="menu-wrap">
+                        <div class="main-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a> </li>
+                                <li><a href="about.html"> About Us</a> </li>
+                                <li><a href="services.html">services</a></li>   
+                                 <li><a href="#"> Training <i class="fas fa-angle-down"></i></a> 
+                                    <ul class="sub-menu">
+                                        <li><a href="prompt-eng.html">Prompt Engineering</a></li>
+                                        <li><a href="python.html">Python</a></li>
+                                        <li><a href="sql.html">SQL</a></li>
+                                    </ul>
+                                </li>  
+                                <li><a href="internship.html">Internship</a></li>
+                                <li><a href="workshop.html">Workshop</a></li>
+                                <li><a href="tech-consulting.html">Tech-consulting</a></li>
+                                <li><a href="careers.html"> Careers</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-block d-lg-none col-sm-1 col-md-8 col-6">
+                    <div class="mobile-nav-wrap">
+                        <div id="hamburger"><i class="fal fa-bars"></i></div>
+                        <!-- mobile menu - responsive menu  -->
+                        <div class="mobile-nav">
+                            <button type="button" class="close-nav">
+                                <i class="fal fa-times-circle"></i>
+                            </button>
+                            <nav class="sidebar-nav">
+                                <ul class="metismenu" id="mobile-menu">                                     
+                                    <li><a href="index.html">Home</a> </li>
+                                    <li><a href="about.html"> About Us</a> </li>
+                                    <li><a href="services.html">services</a></li>   
+                                  <li><a href="#"> Training <i class="fas fa-angle-down"></i></a> 
+                                    <ul class="sub-menu">
+                                        <li><a href="prompt-eng.html">Prompt Engineering</a></li>
+                                        <li><a href="python.html">Python</a></li>
+                                        <li><a href="sql.html">SQL</a></li>
+                                    </ul>
+                                </li>                               
+                                    <li><a href="internship.html">Internship</a></li>
+                                    <li><a href="workshop.html">Workshop</a></li>
+                                    <li><a href="tech-consulting.html">Tech-consulting</a></li>
+                                    <li><a href="blogs.html"> Blogs</a> </li>
+                                    <li><a href="careers.html"> Careers</a> </li>
+                                    <li><a href="contact.html"> Contact</a> </li>
+                                </ul>
+                            </nav>
+
+                            <div class="action-bar text-white">
+                                <div class="single-info-element">
+                                    <div class="icon">
+                                        <i class="fal fa-map-marked-alt"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>visit our location:</h5>
+                                        <span> Chennai, India</span>
+                                    </div>
+                                </div>
+                                 
+                                <div class="single-info-element">
+                                    <div class="icon">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Send us mail</h5>
+                                        <span>info@aiqsofttech.com</span>
+                                    </div>
+                                </div>
+                                <div class="call-us">
+                                    <div class="icon text-white">
+                                        <i class="fal fa-phone-volume"></i>
+                                    </div>
+                                    <div class="text">
+                                        <h5>Phone Number</h5>
+                                        <span>+91 99443 77693</span>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </header>   
+
+
+    <section class="hero-wrapper hero-1 text-center text-md-start">
+        <div class="hero-slider-active">
+            <div class="single-slide">
+                <div class="slide-bg bg-cover wow zoomIn" style="background-image: url('assets/img/home1/slide1.jpg');"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xxl-8 col-lg-9 col-sm-10">
+                            <div class="hero-contents pe-lg-3 text-white">
+                                <h6 class="animated" data-animation-in="fadeInDown">&nbsp;</h6>
+                                <h1 class="fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.3">Mission</h1>
+                                <h2 class="pe-lg-5 mb-4 animated" data-animation-in="fadeInRight" data-delay-in="0.6">We change lives by enabling individuals through the acquisition of in-demand skills</h2>
+                                <a href="#" data-animation-in="fadeInRight" data-delay-in="0.9" class="theme-btn me-sm-4 mt-4 animated" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact US</a>
+								
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+            
+            <div class="single-slide">
+                <div class="slide-bg bg-cover wow zoomIn" style="background-image: url('assets/img/home1/slide2.jpg');"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xxl-8 col-lg-9 col-sm-10">
+                            <div class="hero-contents pe-lg-3 text-white">
+								<h6 class="animated" data-animation-in="fadeInDown">&nbsp;</h6>
+                                <h1 class="fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.3">Ignite your Aspirations</h1>
+                                <h2 class="pe-lg-5 mb-4 animated" data-animation-in="fadeInRight" data-delay-in="0.6">Training | Workshops | Internship| Technology Consulting</h2>
+                                <a href="#" data-animation-in="fadeInRight" data-delay-in="0.9" class="theme-btn me-sm-4 mt-4 animated" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact US</a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="slide-bg bg-cover wow zoomIn" style="background-image: url('assets/img/home1/banner3.jpg');"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xxl-8 col-lg-9 col-sm-10">
+                            <div class="hero-contents pe-lg-3 text-white">
+								 
+                                <h1 class="fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.3">AI Won’t Replace Humans<br</h1>
+                                <h2 class="pe-lg-5 mb-4 animated" data-animation-in="fadeInRight" data-delay-in="0.6">But Humans With AI Will Replace Humans Without AI</h2>
+                                <a href="#" data-animation-in="fadeInRight" data-delay-in="0.9" class="theme-btn me-sm-4 mt-4 animated" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact US</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-slide">
+                <div class="slide-bg bg-cover wow zoomIn" style="background-image: url('assets/img/home1/banner2.jpg');"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xxl-8 col-lg-9 col-sm-10">
+                            <div class="hero-contents pe-lg-3 text-white">
+								 
+                                <h1 class="fs-lg animated" data-animation-in="fadeInRight" data-delay-in="0.3">AiQsoftTech</h1>
+                                <h2 class="pe-lg-5 mb-4 animated" data-animation-in="fadeInRight" data-delay-in="0.6">Whether you're an individual or part of an organization, access the latest courses and personalized career coaching to build in-demand skills.</h2>
+                                <a href="#" data-animation-in="fadeInRight" data-delay-in="0.9" class="theme-btn me-sm-4 mt-4 animated" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact US</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		 
+			
+        </div>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44px" height="44px" id="circle" fill="none" stroke="currentColor">
+                <circle r="20" cy="22" cx="22" id="quantechcircle" />
+            </symbol>
+        </svg>
+    </section>
+
+    
+
+
+
+
+
+    <section class="about-wrapper section-padding pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-12">
+                    <div class="mb-5 mb-md-0">
+                        <img src="assets/img/home1/about1.jpg" alt="">
+                        
+
+                         
+                    </div>
+                </div>
+                <div class="col-xl-6 col-12 ps-xl-5">
+                    <div class="section-title">
+                        <!--span>Welcome AiQsoftTech</span -->
+                        <h2>Welcome to AiQsoftTech</h2>
+                        <p class="pb-3 text-justify">Welcome to AiQsoftTech – your gateway to the dynamic world of software solutions! Established by industry veterans with vast experience in successful implementations for Fortune 500 clients, we offer cutting-edge training programs. Our hands-on approach, led by experienced instructors, ensures you gain the latest skills in software development. Whether you're a beginner launching your career or a professional seeking to upskill, AiQsoftTech provides tailored programs in state-of-the-art facilities. Thrive in the ever-evolving tech landscape with us!</p>
+						
+					</div>
+
+                    <!--div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="info-icon-item">
+                                <img src="assets/img/icons/experiance.svg" alt="">
+                                <h3>Certification</h3>
+                                <p>Providing innovative solutions and exceptional service</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="info-icon-item">
+                                <img src="assets/img/icons/settings.svg" alt="">
+                                <h3>Services</h3>
+                                <p>Providing innovative solutions and exceptional service</p>
+                            </div>
+                        </div>
+                    </div -->
+                    <a href="about.html" class="theme-btn mt-30">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="best-services-wrapper section-padding section-bg">
+        <div class="container">
+            <div class="col-12 col-xl-6 offset-xl-3 text-center">
+                <div class="section-title">
+                    
+                    <h2>We Offer a Wide Variety of  Services</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="single-service-left-icon">
+                        <div class="icon">
+                            <img src="assets/img/icons/training.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4><a href="training.html">Training</a></h4>
+                            <p> <span class="services-bold">Invest in your future today:</span> Don't just get a job, get the dream job! Upskill, reskill and propel yourself. Forward with future-proof training designed for success.</p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="single-service-left-icon">
+                        <div class="icon">
+                            <img src="assets/img/icons/internships.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4><a href="internship.html">Internships</a></h4>
+                            <p><span class="services-bold">Your future starts here:</span> Make Your mark, gain valuable skills and network with industry influencer. Join our internship program and unlock your potential.</p>
+                        </div>
+                    </div>
+                </div>               
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="single-service-left-icon">
+                        <div class="icon">
+                            <img src="assets/img/icons/workshop.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4><a href="workshop.html">Workshop</a></h4>
+                            <p><span class="services-bold">From zero to hero:</span> Get coding, designing, or analyzing like a pro in record time. Bootcamps are your launchpad to a high-paying, fulfilling tech career.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="single-service-left-icon">
+                        <div class="icon">
+                            <img src="assets/img/icons/tech-consulting.png" alt="">
+                        </div>
+                        <div class="content">
+                            <h4><a href="tech-consulting.html">Tech-consulting</a></h4>
+                            <p><span class="services-bold">From strategy to reality:</span> We bridge the gap between vision and execution. Leverage our expertise to navigate the ever-evolving tech landscape and stay ahead of the curve..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-50 text-center">
+                <a href="services.html" class="theme-btn">All Services</a>
+            </div>
+        </div>
+    </section>
+ 
+    <section class="our-news-section   pt-50  pb-50">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-md-12text-center text-md-start">
+                    <div class="section-title">
+                        <!-- <span>Our Completed Projects</span> -->
+                        <h2>Training</h2>
+                    </div>
+                </div>
+                 
+            </div>
+            <div class="row align-center">
+        <div class="col-md-4 text-white">
+            <div class="single-project-card bg-cover" style="background-image: url('assets/img/project/1.jpg')">
+                <a href="prompt-eng.html" class="plus-link"><i class="fal fa-plus"></i></a>
+                <div class="content">
+                    <h3>Prompt Engineering</h3>
+                    <!-- <p>Design</p> -->
+                </div>
+            </div>
+        </div>
+            <div class="col-md-4 text-white">
+
+            <div class="single-project-card bg-cover" style="background-image: url('assets/img/project/2.jpg')">
+                <a href="python.html" class="plus-link"><i class="fal fa-plus"></i></a>
+                <div class="content">
+                    <h3>Python</h3>
+                    <!-- <p>Development</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 text-white">
+            <div class="single-project-card bg-cover" style="background-image: url('assets/img/project/3.jpg')">
+                <a href="sql.html" class="plus-link"><i class="fal fa-plus"></i></a>
+                <div class="content">
+                    <h3>SQL</h3>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            
+            
+        </div>
+    </section>
+
+
+    
+
+    <section class="our-news-section   pt-50  pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                       
+                        <h2>Our Latest Blogs</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-4 col-md-6">
+                    <div class="single-blog-item">
+                        <div class="post-featured-thumb bg-cover" style="background-image: url('assets/img/blog/B1.jpg')">
+                             
+                        </div>
+                        <div class="content">
+                            <h3><a href="unleashing_creativity_a_dive_into_the_world_of_generative_ai.html">Unleashing Creativity: A Dive into the World of Generative AI</a></h3>
+                            <p>Generative AI, a groundbreaking field within artificial intelligence, is revolutionizing the way machines comprehend and create. </p>
+
+                            <div class="post-meta d-flex align-items-center">
+                                <div class="post-date">
+                                    <i class="fal fa-calendar-alt"></i>15th Dec 2023
+                                </div>
+                                <div class="post-author">
+                                    <i class="fal fa-user-alt"></i> by <a href="#">admin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="single-blog-item">
+                        <div class="post-featured-thumb bg-cover" style="background-image: url('assets/img/blog/B2.jpg')">
+                             
+                        </div>
+                        <div class="content">
+                            <h3><a href="supercharge_bard_prompt_hacks_for_ai_writing_magic.html">Supercharge Bard: Prompt Hacks for AI Writing Magic</a></h3>
+                            <p>Have you ever wished you could whisper a wish to a digital genie and watch it unfold on the screen? Well, with Bard, Google's AI language model, and the art of prompt...</p>
+
+                            <div class="post-meta d-flex align-items-center">
+                                <div class="post-date">
+                                    <i class="fal fa-calendar-alt"></i>Jan 18, 2024
+                                </div>
+                                <div class="post-author">
+                                    <i class="fal fa-user-alt"></i> by <a href="#">admin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="single-blog-item">
+                        <div class="post-featured-thumb bg-cover" style="background-image: url('assets/img/blog/B3.jpg')">
+                           
+                        </div>
+                        <div class="content">
+                            <h3><a href="large_language_models_(llm)s_and_finetuning _shaping_the_future_of_gen_ai.html">Large Language Models (LLM)s &amp; Finetuning: Shaping the Future of Gen AI</a></h3>
+                            <p>Ever heard of a robot writing novels or composing music? That&#39;s thanks to Large.</p>
+
+                            <div class="post-meta d-flex align-items-center">
+                                <div class="post-date">
+                                    <i class="fal fa-calendar-alt"></i>23rd Jan 2024
+                                </div>
+                                <div class="post-author">
+                                    <i class="fal fa-user-alt"></i> by <a href="#">admin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-40 text-center">
+                    <a href="blogs.html" class="theme-btn">All Blogs</a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <section class="cta-banner-wrapper">
+        <div class="container">
+            <div class="cta-banner-box section-padding bg-cover" style="background-image: url('assets/img/cta-banner-bg.jpg')">
+                <div class="row align-center">
+                    <div class="col-xl-7 text-center text-xl-start offset-xl-1 offset-xl-1">
+                        <div class="section-title mb-0">
+                            
+                            <h2 class="mb-md-0">Need Any Consultations</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mt-4 mt-xl-0 text-center">
+                        <a href="#" class="theme-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-1 footer-wrap">
+        <div class="footer-widgets-wrapper text-white bg-cover" style="background-image: url('assets/img/footer-widgets-bg.png')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="about-quantech pe-md-5 pe-xl-0">
+                            <a href="index-2.html">
+                                <img src="assets/img/logo-footer.png" alt="AiQsoftTech">
+                            </a>
+                            <p>We are a team of seasoned professional driven by a shared commitment: providing innovative solutions and delivering exceptional service for every client.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="single-footer-wid ps-xl-5">
+                            <div class="wid-title">
+                                <h3>Quick links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="internship.html">Internship</a></li>
+                                <li><a href="workshop.html">Workshop</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="single-footer-wid-2 ps-xl-2">
+                            <div class="wid-title empty">
+                                <h3> &nbsp;</h3>
+                            </div>
+                            <ul>
+                                <li><a href="blogs.html">Blogs</a></li>
+                                <li><a href="tech-consulting.html">Tech-consulting</a></li>
+								<li><a href="careers.html"> Careers</a> </li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xl-3">
+                        <div class="single-footer-wid site-info-widget">
+                            <div class="wid-title">
+                                <h3>Get In Touch</h3>
+                            </div>
+                            <div class="get-in-touch">
+                                <div class="single-contact-info">
+                                    <div class="icon id1">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <span>Chennai, India</span>
+                                    </div>
+                                </div>
+                                <div class="single-contact-info">
+                                    <div class="icon id2">
+                                        <i class="fal fa-phone"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <span>+91 99443 77693</span>
+                                    </div>
+                                </div>
+                                <div class="single-contact-info">
+                                    <div class="icon id3">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-info">
+                                        <span>info@aiqsofttech.com</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container align-items-center">
+                <div class="bottom-content-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="copy-rights">
+                                <p>&copy;2023 <strong>AiQsoftTech</strong>, All Rights Reserved</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mt-2 mt-md-0 col-12 text-md-end">
+                            <div class="social-links">
+                                <a href="https://www.facebook.com/profile.php?id=61555227451654" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                                        <a href="https://www.youtube.com/@AiQsoftTech" target="_blank"><i class="fab fa-youtube" aria-hidden="true"></i></a> 
+                                        <a href="https://www.instagram.com/aiqsofttech/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                                        <a href="https://www.linkedin.com/in/aiq-soft-tech?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                        <a href="https://api.whatsapp.com/send/?phone=9944377693&text&app_absent=0" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>   
+	
+	
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="exampleModalLabel">Enquiry</h4>
+          <!--button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button -->
+        </div>
+        <form>
+        <div class="modal-body">
+            
+                <div class="form-group">
+                    <div class="mb-3">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="number" class="form-control" id="phonenumber" placeholder="Phone Number" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">I wish to receive further updates and confirmation via whatsapp</label>
+                    </div>
+                    
+                </div>
+            
+        </div>
+        <div class="modal-footer">
+            <input type="submit" class="btn btn-success" value="Submit" />
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div></form>
+      </div>
+    </div>
+    </div>
+	
+    <!--  ALl JS Plugins
+    ====================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"></script>	
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imageload.min.js"></script>
+    <script src="assets/js/scrollUp.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/slick-animation.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/metismenu.js"></script>
+    <script src="assets/js/nice-select2.js"></script>
+    <script src="assets/js/active.js"></script>
+</body>
+</html>
